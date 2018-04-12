@@ -1,27 +1,209 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hotair balloon website</title>
+  <!-- Latest compiled and minified CSS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="js/script.js" async></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
+     Latest compiled JavaScript 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <!--custom-->
+    custom
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="nav.css">
     <script src="script.js"></script>
 </head>
+  
+  <style>
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    
+    #Hotair {
+      display: table;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.1)
+      ),
+        url('balloon-1.jpg') no-repeat center;
+      background-size: cover;
+    }
+    #Info {
+      /*display: table;*/
+      color:white;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right:0px;
+      margin-left:0px;
+      background: linear-gradient(
+        rgba(0,0,100,0.9),
+        rgba(0,0,100,0.2)
+      ),
+        url('http://legacyglobaldevelopment.com/wp-content/uploads/2016/09/shutterstock_139755556-2000x1000.jpg') no-repeat center;
+      background-size: cover;
+      text-align: center;
+      padding:60px;
+    }
+    #Home {
+       margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right:100px;
+      margin-left:100px; 
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+    h1 {
+      font-size: 90px;
+      font-family: "Anton", sans-serif;
+    }
+    h2 {
+      font-size: 30px;
+       margin-top: 60px;
+      margin-bottom: 60px;
+      margin-right:0px;
+      margin-left:0px;
+    }
+    h3 {
+      font-size: 70px;
+      font-family: 'Anton';
+    }
+    
+    .text-vertical-center {
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      color: white;
+    }
+    
+    /* small+ */
+    @media(min-width: 768px){
+      h1 {
+        font-size: 130px;
+      }
+      
+      h2 {
+        font-size: 60px;
+      }
+    }
+    /* medium+ (use (#)vw to let font change over time) */
+    @media(min-width: 992px){
+        h1{
+            font-size: 140px;
+        }
+        h2{
+            font-size: 80px;
+        }
+        
+    }
+    @media(min-width: 1200px){
+        h1{
+            font-size: 150px;
+        }
+        h2{
+            font-size: 100px;
+        }
+    }
+/*nav bar*/
 
+  </style>
+  
 <body>
+  
+  <header id="Hotair">
+    <div class="text-vertical-center">
+      <h1>Skydance Hot Air Balloon Rides</h1>
+      <h2>Ride with the wind. Dance with the sky.</h2>
+    </div>
+  
+   <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a id="logo2" class="navbar-brand page-scroll" href="#Hotair">Hot Air balloon</a>
+
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#Home">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#Info">Info</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+  </header>
+  
+  <!-- Home -->
+  <div class="jumbotron" id="Home">
+  <h1>Home</h1>
+  <p>There's lots of stuff to discover here.</p>
+  
+  <p>Let me show you around.</p>
+  
+  </p>
+</div>
+
+  <div class="jumbotron row" id="Info">
+      <h2 class="col-sm-4">Tree</h2>
+      <h2 class="col-sm-4">Water</h2>
+      <h2 class="col-sm-4">Sunsets</h2>
+  </div>  
+  
+<div class="container">
+  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
+  </div>
+</div>
+
+
+
+
 
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
